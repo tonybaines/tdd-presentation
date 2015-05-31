@@ -11,6 +11,8 @@ ifndef::sourcedir[:sourcedir: ../java]
 ** of the behaviour of an individual piece of code
 ** ..., or an entire system
 ** using tools such as JUnit or Selenium
+
+== Some Definintions
 * **TDD**
 ** A method of incrementally designing and implementing features
 in a software system
@@ -20,9 +22,8 @@ in a software system
 ** and periodically improving the design through refactoring
 *** changing the implementation without changing the behaviour
 
+
 == What makes a good automated test
-
-
 The value that a team gets from automated testing **must** be greater
 than the effort that they expend creating and maintaining those tests.
 
@@ -31,6 +32,8 @@ than the effort that they expend creating and maintaining those tests.
 ** Regression testing
 ** Fast feedback on changes
 ** 'Documentation' on the behaviour of the system
+
+== What makes a good automated test
 * A valuable test
 ** Is __fast__
 ** Fails for one reason (specific)
