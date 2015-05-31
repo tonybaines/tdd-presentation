@@ -59,7 +59,7 @@ asciidoctor {
     dependsOn jrubyPrepareGems
 
 	sources {
-		include 'example-manual.adoc'
+		include 'tdd-and-test-automation.adoc'
 	}
 
 	resources {
