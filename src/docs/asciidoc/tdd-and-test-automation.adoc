@@ -11,8 +11,6 @@ ifndef::sourcedir[:sourcedir: ../java]
 ** of the behaviour of an individual piece of code
 ** ..., or an entire system
 ** using tools such as JUnit or Selenium
-
-== Some Definintions
 * **TDD**
 ** A method of incrementally designing and implementing features
 in a software system
@@ -32,8 +30,6 @@ than the effort that they expend creating and maintaining those tests.
 ** Regression testing
 ** Fast feedback on changes
 ** 'Documentation' on the behaviour of the system
-
-== What makes a good automated test
 * A valuable test
 ** Is __fast__
 ** Fails for one reason (specific)
@@ -52,4 +48,33 @@ than the effort that they expend creating and maintaining those tests.
 ** Verify the expected state
 ** e.g. at the correct page, values in the DB as expected
 
+== Test After
+* In some teams tests are always written after the feature is complete
+** Still get the benefits of automation
+** but there's more value to be had
 
+== Driving Development with Tests
+* Every coding decision is a design decision
+* TDD allows the intent of the decision to be captured and verified
+* Two broad approaches 
+** Focus on test doubles (mocks, stubs, fakes)
+** Focus on return values
+
+== Outside-in TDD
+* Also known as BDD
+* Heavy use of test-doubles
+* In an OO system each class has responsibilities and collaborators
+** Start on the outside edge of the system
+** Write a test for a feature
+** Write the API and minimal implementation in the outermost level
+** Delegate to collaborators as appropriate
+*** But don't write the code for them!
+** Use test-doubles to fake behaviour
+*** Assertions come from verifying interactions with **mock objects**
+** When the test passes, write a new test
+*** Maybe another scenario from the outermost level
+*** Maybe a test for a collaborator (moving inwards)
+* Assumes (and drives out) a loosely-coupled, dependency-injection based architecture
+
+== Value-based testing ( **find a better name** )
+* TBA
