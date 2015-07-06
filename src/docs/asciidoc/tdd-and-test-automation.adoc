@@ -1,5 +1,5 @@
 = Test Automation and TDD 
-2015-05-31
+2015-07-02
 :revnumber: {project-version}
 ifndef::imagesdir[:imagesdir: images]
 ifndef::sourcedir[:sourcedir: ../java]

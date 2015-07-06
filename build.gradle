@@ -103,3 +103,8 @@ watch {
 liveReload {
   docRoot asciidoctor.outputDir.canonicalPath
 }
+
+wrapper {
+  gradleVersion = '2.5-rc-2'
+  //gradleVersion = '2.4'
+}
